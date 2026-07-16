@@ -3,195 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Center Support Service | Excelsior Springs, MO</title>
-    <!-- Tailwind CSS CDN for modern styling -->
+    <title>Tech Center Support Service | Reliable IT & Technical Support</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- Header / Navigation -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <i data-lucide="wrench" class="w-6 h-6 text-blue-600"></i>
-                <span class="font-bold text-xl tracking-tight text-slate-900">Tech Center<span class="text-blue-600"> Support</span></span>
-            </div>
-            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
-                <a href="#services" class="hover:text-blue-600 transition">Our Services</a>
-                <a href="#contact" class="hover:text-blue-600 transition">Location & Contact</a>
-                <a href="#request-support" class="hover:text-blue-600 transition">Get Support</a>
-            </nav>
-            <a href="tel:8163198559" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition shadow-sm flex items-center gap-2">
-                <i data-lucide="phone" class="w-4 h-4"></i> Call 816-319-8559
+    <header class="sticky top-0 z-50 bg-white border-b border-slate-200/80 backdrop-blur-md bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2.5">
+                <div class="bg-blue-600 text-white p-2.5 rounded-lg flex items-center justify-center shadow-md shadow-blue-500/20">
+                    <i class="fa-solid fa-laptop-code text-xl"></i>
+                </div>
+                <div>
+                    <span class="block text-lg font-extrabold tracking-tight text-slate-900 leading-none">Tech Center</span>
+                    <span class="text-xs font-semibold text-blue-600 tracking-wider uppercase">Support Service</span>
+                </div>
             </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact Us</a>
+                <a href="https://support.techcentersupport.us" target="_blank" rel="noopener" class="bg-blue-50 hover:bg-blue-100 text-blue-700 px-4 py-2 rounded-lg transition border border-blue-200">
+                    <i class="fa-solid fa-headset mr-1.5"></i> Launch Helpdesk
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="tel:816-319-8559" class="hidden sm:inline-flex items-center gap-2 text-sm font-bold text-slate-900 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-lg transition border border-slate-200">
+                    <i class="fa-solid fa-phone text-blue-600"></i> 816-319-8559
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-slate-900 text-white py-20 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <span class="bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">
-                Serving Excelsior Springs & Surrounding Areas
-            </span>
-            <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-4">
-                Your Trusted Partner for <br>Local IT & Device Support
-            </h1>
-            <p class="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
-                At Tech Center Support Service, we take the stress out of technology. From hardware fixes to network setups, we offer fast, friendly, and reliable service to get you back up and running.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#request-support" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg transition shadow-md">
-                    Request Support Service
-                </a>
-                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-6 py-3 rounded-lg transition">
-                    Contact & Location Info
-                </a>
+    <section class="relative bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950 text-white overflow-hidden py-24 lg:py-32">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <!-- Slogan -->
+                <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 shadow-inner">
+                    Bringing Affordable I.T. Service to Rural Missouri
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6">
+                    On-Demand IT Solutions <br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Tailored For You.</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
+                    Need fast, reliable tech help? Tech Center Support Service provides top-tier troubleshooting, setup assistance, and managed IT services to keep you moving forward.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://support.techcentersupport.us" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-blue-600/30 transition text-center">
+                        <i class="fa-solid fa-ticket"></i> Open Support Ticket
+                    </a>
+                    <a href="tel:816-319-8559" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-slate-600 text-white font-bold px-8 py-4 rounded-xl transition text-center">
+                        <i class="fa-solid fa-phone"></i> Call 816-319-8559
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Core Services Section -->
-    <section id="services" class="py-16 px-4 max-w-6xl mx-auto w-full">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-slate-900 mb-2">Expert IT & Repair Services</h2>
-            <p class="text-slate-600">No matter the technical issue, we have a solution for you.</p>
+    <!-- Services Overview -->
+    <section id="services" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Our Technical Services</h2>
+            <div class="h-1.5 w-16 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
-        
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Service 1 -->
-            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                    <i data-lucide="monitor" class="w-6 h-6"></i>
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-screwdriver-wrench text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Computer & Laptop Repair</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">
-                    Diagnostics, memory upgrades, screen replacements, and hard drive repairs for both PC and Mac environments.
-                </p>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Diagnostic & Repairs</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">Pinpointing system bottlenecks, recovering lost data, and getting your hardware operating at peak efficiency.</p>
             </div>
-
-            <!-- Service 2 -->
-            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                    <i data-lucide="shield" class="w-6 h-6"></i>
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-shield-halved text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Virus & Spyware Removal</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">
-                    Clean infected devices, install secure antivirus protection, and optimize overall software performance.
-                </p>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Network & Security</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">Configuring reliable local networks, installing robust firewalls, and optimizing Wi-Fi coverage for maximum security.</p>
             </div>
-
-            <!-- Service 3 -->
-            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                    <i data-lucide="hard-drive" class="w-6 h-6"></i>
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-headset text-xl"></i>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-2">Data Recovery & Backup</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">
-                    Safeguard your critical files or retrieve valuable data from failing, damaged, or older physical hard drives.
-                </p>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">24/7 Managed Helpdesk</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">Submit a support ticket any time through our portal. Our team works aggressively to close out requests with rapid turnaround.</p>
             </div>
         </div>
     </section>
 
-    <!-- Location & Business Info Section -->
-    <section id="contact" class="bg-slate-100 py-16 px-4">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <!-- Helpdesk Callout Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Honest, Local Service</h2>
-                <p class="text-slate-600 mb-6">
-                    Tech Center Support Service is proud to serve families and businesses in the Excelsior Springs area. We offer personalized attention that big-box retail stores just can't match.
-                </p>
-                <div class="space-y-4 bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                    <div class="flex items-start gap-3">
-                        <i data-lucide="map-pin" class="w-5 h-5 text-blue-600 shrink-0 mt-0.5"></i>
-                        <div>
-                            <p class="text-slate-900 font-semibold">Our Location</p>
-                            <p class="text-slate-600">1800 W Jesse James Rd<br>Excelsior Springs, MO 64024</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i data-lucide="phone" class="w-5 h-5 text-blue-600 shrink-0 mt-0.5"></i>
-                        <div>
-                            <p class="text-slate-900 font-semibold">Phone Support</p>
-                            <p class="text-slate-600"><a href="tel:8163198559" class="hover:text-blue-600 transition">816-319-8559</a></p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i data-lucide="mail" class="w-5 h-5 text-blue-600 shrink-0 mt-0.5"></i>
-                        <div>
-                            <p class="text-slate-900 font-semibold">Email Us</p>
-                            <p class="text-slate-600"><a href="mailto:support@techcentersupport.us" class="hover:text-blue-600 transition">support@techcentersupport.us</a></p>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Need immediate assistance?</h2>
+                <p class="text-blue-100 mt-2 max-w-xl">Submit a ticket directly to our technicians. Log in to track progress, attach screenshots, and get real-time updates on your issue.</p>
             </div>
-            
-            <!-- Quick Notice Box -->
-            <div class="bg-blue-600 text-white p-8 rounded-2xl shadow-xl">
-                <i data-lucide="check-circle" class="w-10 h-10 text-blue-200 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Why Choose Tech Center Support?</h3>
-                <ul class="space-y-3 text-sm text-blue-100">
-                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-200 shrink-0"></i> Independent & local business</li>
-                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-200 shrink-0"></i> Direct communication with the technician</li>
-                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-200 shrink-0"></i> Clear, transparent pricing with no hidden fees</li>
-                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-200 shrink-0"></i> Fast turnaround times on diagnostics and repairs</li>
-                </ul>
-            </div>
+            <a href="https://support.techcentersupport.us" target="_blank" rel="noopener" class="bg-white hover:bg-slate-100 text-blue-700 font-extrabold px-8 py-4 rounded-xl shadow-lg transition whitespace-nowrap flex items-center gap-2">
+                <i class="fa-solid fa-external-link text-sm"></i> Visit support.techcentersupport.us
+            </a>
         </div>
     </section>
 
-    <!-- Support Request Form Section -->
-    <section id="request-support" class="py-16 px-4 max-w-2xl mx-auto w-full">
-        <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-slate-900 mb-2">Request Support</h2>
-            <p class="text-slate-600">Let us know what tech problems you are running into, and we will get back to you shortly.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Get In Touch</h2>
+                <div class="h-1.5 w-16 bg-blue-600 mt-4 rounded-full mb-6"></div>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 shrink-0">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-semibold uppercase tracking-wider text-slate-400">Phone Hotline</span>
+                            <a href="tel:816-319-8559" class="text-lg font-bold text-slate-900 hover:text-blue-600 transition">816-319-8559</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 shrink-0">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-semibold uppercase tracking-wider text-slate-400">Support Email</span>
+                            <a href="mailto:support@techcentersupport.us" class="text-lg font-bold text-slate-900 hover:text-blue-600 transition">support@techcentersupport.us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-900 mb-6">Office Hours</h3>
+                <table class="w-full text-sm text-slate-600 space-y-3">
+                    <tbody>
+                        <tr class="border-b border-slate-100 pb-3 block">
+                            <td class="font-bold text-slate-900 w-1/3">Monday - Friday:</td>
+                            <td>8:00 AM – 6:00 PM CST</td>
+                        </tr>
+                        <tr class="border-b border-slate-100 py-3 block">
+                            <td class="font-bold text-slate-900 w-1/3">Saturday:</td>
+                            <td>9:00 AM – 3:00 PM CST</td>
+                        </tr>
+                        <tr class="pt-3 block">
+                            <td class="font-bold text-slate-900 w-1/3">Sunday:</td>
+                            <td class="text-blue-600 font-semibold">Closed (Urgent On-Call Only)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        
-        <!-- Action Form (Ready for integration with Formspree or Web3Forms using action="...") -->
-        <form class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
-            <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-1">Your Name</label>
-                <input type="text" required placeholder="Your Full Name" class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition">
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                    <label class="block text-sm font-semibold text-slate-700 mb-1">Email Address</label>
-                    <input type="email" required placeholder="name@domain.com" class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition">
-                </div>
-                <div>
-                    <label class="block text-sm font-semibold text-slate-700 mb-1">Phone Number</label>
-                    <input type="tel" placeholder="816-555-0199" class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition">
-                </div>
-            </div>
-
-            <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-1">Describe the Issue</label>
-                <textarea required rows="4" placeholder="How can we help you today? Please include details like your computer model or operating system if known." class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition"></textarea>
-            </div>
-
-            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition shadow-md">
-                Send Message
-            </button>
-        </form>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 px-4 mt-auto border-t border-slate-800 text-sm">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-2">
-                <i data-lucide="wrench" class="w-5 h-5 text-blue-500"></i>
-                <span class="font-bold text-white text-base">Tech Center Support Service</span>
+    <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <p class="text-sm">
+                &copy; 2026 Tech Center Support Service. All rights reserved.
+            </p>
+            <div class="flex gap-6 text-sm">
+                <a href="https://support.techcentersupport.us" target="_blank" rel="noopener" class="hover:text-white transition">Client Helpdesk Portal</a>
             </div>
-            <p>&copy; 2026 Tech Center Support Service. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Initialize Lucide Icons -->
-    <script>
-        lucide.createIcons();
-    </script>
 </body>
 </html>
