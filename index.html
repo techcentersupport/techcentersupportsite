@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Center Support Service</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons for clean, modern symbols -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="cpu" class="w-6 h-6 text-blue-600"></i>
+                <span class="font-bold text-xl tracking-tight text-slate-900">TechCenter<span class="text-blue-600">Support</span></span>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#hours" class="hover:text-blue-600 transition">Hours & Location</a>
+                <a href="#submit-ticket" class="hover:text-blue-600 transition">Submit Ticket</a>
+            </nav>
+            <a href="#submit-ticket" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition shadow-sm">
+                Get Help Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-slate-900 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-4">
+                Fast, Reliable Tech Support <br class="hidden sm:inline">When You Need It Most
+            </h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
+                From hardware repairs and software troubleshooting to network setup and cybersecurity assistance. Our campus and community help desk is here to keep you connected.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#submit-ticket" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg transition shadow-md">
+                    Open a Support Ticket
+                </a>
+                <a href="#services" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-6 py-3 rounded-lg transition">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-16 px-4 max-w-6xl mx-auto w-full">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">Our Support Services</h2>
+            <p class="text-slate-600">How our technicians can assist you today.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                    <i data-lucide="wrench" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Hardware Diagnostics & Repair</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Cracked screens, battery replacements, and physical repairs for laptops, desktops, and tablet devices.
+                </p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Software & Malware Removal</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Virus scans, operating system reinstallation, software updates, and overall performance optimization.
+                </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                    <i data-lucide="wifi" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Network & Wi-Fi Setup</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Trouble connecting to the local network? We'll configure your device securely and ensure a stable connection.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section (Hours & Contact) -->
+    <section id="hours" class="bg-slate-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Visit the Tech Center</h2>
+                <p class="text-slate-600 mb-6">
+                    No appointment necessary for quick consults and device drop-offs. If your issue requires deep diagnostics, we recommend submitting a ticket ahead of time.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                        <span class="text-slate-700 font-medium">Main Library, Room 204</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="clock" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                        <span class="text-slate-700">Mon - Fri: 8:00 AM - 6:00 PM <br> <span class="text-slate-500 text-sm">Sat - Sun: Closed</span></span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                        <span class="text-slate-700">555-019-2831</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Alert Notice Box -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="flex items-start gap-4">
+                    <div class="bg-amber-50 text-amber-600 p-3 rounded-lg shrink-0">
+                        <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Before dropping off your device:</h3>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-2">
+                            <li>Backup your files to the cloud or an external drive.</li>
+                            <li>Bring your device charger/power adapter.</li>
+                            <li>Have your primary institutional login credentials ready.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Ticket Form Section -->
+    <section id="submit-ticket" class="py-16 px-4 max-w-2xl mx-auto w-full">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">Open a Ticket</h2>
+            <p class="text-slate-600">Provide a few details and our technicians will reach out within 2 hours.</p>
+        </div>
+        
+        <!-- Action Form (Ready for standard processing or integration with Formspree / Web3Forms) -->
+        <form class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+            <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1">Full Name</label>
+                <input type="text" required placeholder="John Doe" class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition">
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Email Address</label>
+                    <input type="email" required placeholder="jdoe@example.com" class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Device Type</label>
+                    <select class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition">
+                        <option>Windows Laptop / PC</option>
+                        <option>macOS (MacBook / iMac)</option>
+                        <option>Smartphone / Tablet</option>
+                        <option>Network / Wi-Fi Issue</option>
+                        <option>Other / Not Sure</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1">Describe the Issue</label>
+                <textarea required rows="4" placeholder="What is happening? (e.g., Laptop screen turns black immediately after booting up)" class="w-full px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition shadow-md">
+                Submit Support Request
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 px-4 mt-auto border-t border-slate-800 text-sm">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <i data-lucide="cpu" class="w-5 h-5 text-blue-500"></i>
+                <span class="font-bold text-white text-base">TechCenter Support</span>
+            </div>
+            <p>&copy; 2026 Tech Center Support Service. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
